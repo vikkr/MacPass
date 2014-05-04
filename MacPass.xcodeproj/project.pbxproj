@@ -86,6 +86,7 @@
 		4C305F36179A0BD70082334F /* KPKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C305F35179A0BD70082334F /* KPKIcon.m */; };
 		4C305F3C179A19F90082334F /* KPKIconLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C305F3B179A19F90082334F /* KPKIconLoading.m */; };
 		4C305F3E179A1A760082334F /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C305F3D179A1A760082334F /* image.png */; };
+		4C30F6871916468500E4AF58 /* MPOutlineTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C30F6861916468500E4AF58 /* MPOutlineTree.m */; };
 		4C3666411787327E00B249F1 /* MPDocument+Attachments.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3666401787327E00B249F1 /* MPDocument+Attachments.m */; };
 		4C366643178748F500B249F1 /* 99_HarddiskTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4C366642178748F500B249F1 /* 99_HarddiskTemplate.pdf */; };
 		4C37A6731769393300AD0A40 /* HNHTableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C37A6721769393300AD0A40 /* HNHTableHeaderCell.m */; };
@@ -510,6 +511,8 @@
 		4C305F35179A0BD70082334F /* KPKIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKIcon.m; sourceTree = "<group>"; };
 		4C305F3B179A19F90082334F /* KPKIconLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKIconLoading.m; sourceTree = "<group>"; };
 		4C305F3D179A1A760082334F /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = Images/image.png; sourceTree = "<group>"; };
+		4C30F6851916468500E4AF58 /* MPOutlineTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOutlineTree.h; sourceTree = "<group>"; };
+		4C30F6861916468500E4AF58 /* MPOutlineTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOutlineTree.m; sourceTree = "<group>"; };
 		4C3666401787327E00B249F1 /* MPDocument+Attachments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPDocument+Attachments.m"; sourceTree = "<group>"; };
 		4C366642178748F500B249F1 /* 99_HarddiskTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = 99_HarddiskTemplate.pdf; path = Icons/99_HarddiskTemplate.pdf; sourceTree = "<group>"; };
 		4C37A6711769393300AD0A40 /* HNHTableHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHTableHeaderCell.h; sourceTree = "<group>"; };
@@ -1331,6 +1334,8 @@
 				4C15B74518BCA3B1003F8008 /* MPDocument+Search.m */,
 				4C6B7C7B18BE7EB0001D5D77 /* MPDocument+HistoryBrowsing.h */,
 				4C6B7C7C18BE7EB0001D5D77 /* MPDocument+HistoryBrowsing.m */,
+				4C30F6851916468500E4AF58 /* MPOutlineTree.h */,
+				4C30F6861916468500E4AF58 /* MPOutlineTree.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2353,6 +2358,7 @@
 				4C5AA591179549A1008ECAD7 /* KPKXmlTreeWriter.m in Sources */,
 				4CE298EB1795FC2A00DF7BDB /* MPEntryContextMenuDelegate.m in Sources */,
 				4CC0D2CE17974A47000B4BDA /* MPCustomFieldTableViewDelegate.m in Sources */,
+				4C30F6871916468500E4AF58 /* MPOutlineTree.m in Sources */,
 				4CF5CF7418B7C81600B0C026 /* NSWindow+Shake.m in Sources */,
 				4CC0D2D117974A5A000B4BDA /* MPAttachmentTableViewDelegate.m in Sources */,
 				4C67D33017981A2B00A7BDFC /* HNHTokenField.m in Sources */,

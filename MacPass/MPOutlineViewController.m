@@ -16,6 +16,7 @@
 #import "MPIconHelper.h"
 #import "MPNotifications.h"
 #import "MPOutlineContextMenuDelegate.h"
+#import "MPOutlineTree.h"
 
 #import "KPKTree.h"
 #import "KPKGroup.h"
@@ -97,8 +98,8 @@ NSString *const _MPOutlinveViewHeaderViewIdentifier = @"HeaderCell";
 - (void)showOutline {
   if(!_bindingEstablished) {
     MPDocument *document = [[self windowController] document];
-    [_treeController setChildrenKeyPath:@"groups"];
-    [_treeController bind:NSContentBinding toObject:document withKeyPath:@"tree" options:nil];
+    [_treeController setChildrenKeyPath:NSStringFromSelector(@selector(groups))];
+    [_treeController bind:NSContentBinding toObject:document withKeyPath:NSStringFromSelector(@selector(outlineTree)) options:nil];
     [_outlineView bind:NSContentBinding toObject:_treeController withKeyPath:@"arrangedObjects" options:nil];
     [self bind:@"databaseNameWrapper" toObject:document.tree.metaData withKeyPath:@"databaseName" options:nil];
     [_outlineView setDataSource:self.datasource];
@@ -275,7 +276,7 @@ NSString *const _MPOutlinveViewHeaderViewIdentifier = @"HeaderCell";
 
 - (BOOL)_itemIsRootNode:(id)item {
   id node = [item representedObject];
-  return [node isKindOfClass:[KPKTree class]];
+  return [node isKindOfClass:[MPOutlineTree class]];
 }
 
 @end

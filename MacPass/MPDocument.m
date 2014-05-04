@@ -31,6 +31,7 @@
 #import "MPNotifications.h"
 #import "MPConstants.h"
 #import "MPSavePanelAccessoryViewController.h"
+#import "MPOutlineTree.h"
 
 #import "DDXMLNode.h"
 
@@ -74,12 +75,18 @@ NSString *const MPDocumentGroupKey                        = @"MPDocumentGroupKey
 @property (strong) IBOutlet NSView *warningView;
 @property (weak) IBOutlet NSImageView *warningViewImage;
 
+@property (nonatomic, strong) MPOutlineTree *outlineTree;
+
 @end
 
 
 @implementation MPDocument
 
 + (NSSet *)keyPathsForValuesAffectingRoot {
+  return [NSSet setWithObject:@"tree"];
+}
+
++ (NSSet *)keyPathsForValuesAffectingOutlineTree {
   return [NSSet setWithObject:@"tree"];
 }
 
@@ -385,6 +392,7 @@ NSString *const MPDocumentGroupKey                        = @"MPDocumentGroupKey
   if(_tree != tree) {
     _tree = tree;
     _tree.undoManager = [self undoManager];
+    self.outlineTree = [[MPOutlineTree alloc] initWithTree:_tree];
   }
 }
 
